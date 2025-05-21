@@ -1,0 +1,134 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  border: none;
+  outline: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+body {
+  --primaryColor: rgb(195, 155, 124);
+  --wrapperWidth: 1280px;
+  --textColor: rgb(34, 34, 34);
+  --headerFont: 'Trebuchet MS', sans-serif;
+  --bodyFont: 'Trebuchet MS', sans-serif;
+  background-color: white;
+  font-family: var(--bodyFont);
+  font-size: 16px;
+  color: var(--textColor);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--headerFont);
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin: 3rem 0;
+}
+
+div.wrapper {
+  width: 100%;
+  max-width: var(--wrapperWidth);
+  margin: auto;
+}
+
+.button {
+  display: block;
+  padding: 1rem 4rem;
+  color: white;
+  border: solid thin var(--primaryColor);
+  width: fit-content;
+  margin: auto;
+  margin-top: 2rem;
+  transition: all 0.5s;
+}
+
+.button:hover {
+  border-color: white;
+}
+
+header>div#menu-container>nav#main-menu>a.active {
+  color: var(--primaryColor);
+  font-weight: bold;
+}
+
+header {
+  width: 100%;
+  background-image: url("../images/home-a.jpg");
+  background-repeat: no-repeat;
+  /* background-size: contain; */
+  /* background-size: 100% 100%; */
+  background-size: cover;
+  background-position: center;
+  aspect-ratio: 1920/600;
+}
+
+header>div#menu-container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 3rem;
+}
+
+header>div#menu-container>nav#main-menu {
+  display: block;
+}
+
+header>div#menu-container>nav#burger-menu {
+  display: none;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: black;
+  cursor: pointer;
+}
+
+
+header>div#menu-container>nav#main-menu>a {
+  display: inline-block;
+  color: var(--textColor);
+  padding: 0.4rem 0.8rem;
+  transition: all 0.5s;
+}
+
+header>div#menu-container>nav#main-menu>a:hover {
+  color: var(--primaryColor);
+}
+
+header>div#menu-container>nav#main-menu.block {
+  display: block;
+}
+
+footer {
+  text-align: center;
+  padding: 3rem 0;
+  background-color: #f9f7fa;
+}
+
+
+@media screen and (width < 760px) {
+  header>div#menu-container>nav#main-menu {
+    position: absolute;
+    display: none;
+    top: 120px;
+    right: 0px;
+    width: 100%;
+    max-width: 320px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-top: solid thin rgb(224, 243, 223);
+
+    a {
+      display: block;
+    }
+  }
+
+  header>div#menu-container>nav#burger-menu {
+    display: block;
+  }
+}

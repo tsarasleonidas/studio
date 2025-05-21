@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/portfolio.css">
+  <link rel="stylesheet" href="./css/lightBox.css">
+  <script src="./js/lightBox.js"></script>
+  <script src="./js/burger-icon.js"></script>
+  <title>Portfolio page</title>
+</head>
+
+<body>
+  <header>
+    <div class="wrapper" id="menu-container">
+      <nav>
+        <h2>ARCHITECT STUDIO</h2>
+      </nav>
+      <nav id="main-menu">
+        <a href="home.html">Home</a>
+        <a href="about.html">About us</a>
+        <a class="active" href="portfolio.html">Portfolio</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <nav id="burger-menu">☰</nav>
+    </div>
+  </header>
+
+  <section id="portfolio">
+    <h1>PORTFOLIO</h1>
+    <div class="wrapper cards">
+
+      <figure class="portfolio">
+        <img src="./images/portfolio-a.jpg" onclick="lightBox('./images/portfolio-a.jpg')">
+        <figcaption>
+          <h3>Shopping mall</h3>
+          <p>Ut perspiciatis unde omnis iste natus error sit voluptatem.</p>
+        </figcaption>
+      </figure>
+
+      <figure class="portfolio">
+        <img src="./images/portfolio-b.jpg" onclick="lightBox('./images/portfolio-b.jpg')">
+        <figcaption>
+          <h3>Apartment building</h3>
+          <p>Ut perspiciatis unde omnis iste natus error sit voluptatem.</p>
+        </figcaption>
+      </figure>
+
+      <figure class="portfolio">
+        <img src="./images/portfolio-c.jpg" onclick="lightBox('./images/portfolio-c.jpg')">
+        <figcaption>
+          <h3>Public library</h3>
+          <p>Ut perspiciatis unde omnis iste natus error sit voluptatem.</p>
+        </figcaption>
+      </figure>
+
+      <figure class="portfolio">
+        <img src="./images/portfolio-d.jpg" onclick="lightBox('./images/portfolio-d.jpg')">
+        <figcaption>
+          <h3>Park relax zones</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </figcaption>
+      </figure>
+
+      <figure class="portfolio">
+        <img src="./images/portfolio-e.jpg" onclick="lightBox('./images/portfolio-e.jpg')">
+        <figcaption>
+          <h3>Shopping mall</h3>
+          <p>Et dolore magnam aliquam quaerat voluptatem ut enim.</p>
+        </figcaption>
+      </figure>
+
+      <figure class="portfolio">
+        <img src="./images/portfolio-f.jpg" onclick="lightBox('./images/portfolio-f.jpg')">
+        <figcaption>
+          <h3>Detached family house</h3>
+          <p>Et dolore magnam aliquam quaerat voluptatem ut enim.</p>
+        </figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <div class="portfolio">
+    <h2>DO YOU LIKE OUR WORK?</h2>
+    <p>This is where your text starts. You can click here and start typing. Veritatis et quasi architecto beatae vitae
+      dicta sunt explicabo.</p>
+    <a class="button" href="#">Hire us</a>
+  </div>
+
+  <footer>
+    <p>ARCHITECT STUDIO, 12 Pike St, New York, NY 10002, 1-541-754-3010</p>
+    <p>Powered by Studio Architect</p>
+  </footer>
+</body>
+
+</html>
