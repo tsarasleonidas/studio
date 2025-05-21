@@ -1,2 +1,2 @@
 # studio
-static site
+educational static site
